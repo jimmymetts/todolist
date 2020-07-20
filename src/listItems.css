@@ -26,6 +26,15 @@
   font-size: 15px;
   cursor: pointer;
 }
+.list p input {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.list p {
+  outline: none;
+}
 .itemsAnim-enter {
   opacity: 0.01;
 }
