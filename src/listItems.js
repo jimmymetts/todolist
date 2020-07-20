@@ -31,7 +31,12 @@ function ListItems(props){
             </div>
         })
     return(
-        <div>{ListItems}</div>
+        <div>
+            <FlipMove duration={500} easing="ease-in-out">
+            {ListItems}
+            </FlipMove>
+            
+            </div>
     )
 }
 export default ListItems; 
