@@ -4,6 +4,8 @@ import ListItems from './ListItems'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faTrash)
+
 class App extends React.Component{
   constructor(props){
     super(props);
@@ -42,7 +44,7 @@ class App extends React.Component{
   }
   deleteItem(key){
     const filteredItems = this.state.items.filter(item =>
-      item!==key);
+      item.key!==key);
       this.setState({
         items:filteredItems,
       })
